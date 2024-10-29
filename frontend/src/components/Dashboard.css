@@ -1,0 +1,15 @@
+.bg-container1{
+    height: 100vh;
+    background-image: url("hexaware_bg.jpg");
+    padding: 40px;
+}
+.container{
+    background-color: #ffffff;
+    overflow-y: auto;
+    height: 71vh;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+.heading{
+    font-size: 40px;
+}
