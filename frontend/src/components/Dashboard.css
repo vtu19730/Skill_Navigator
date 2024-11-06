@@ -13,3 +13,8 @@
 .heading{
     font-size: 40px;
 }
+.tabs-container {
+    /* position: sticky; */
+    top: 0;
+    z-index: 10;
+  }
