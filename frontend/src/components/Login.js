@@ -90,9 +90,6 @@ const Login = () => {
               required
             />
             <div className="form-options">
-              <label>
-                <input type="checkbox" /> Remember me
-              </label>
               <a href="/forgot-password" className="forgot-password">Forgot Password?</a>
             </div>
             <button type="submit" className="login-btn">Sign In</button>
@@ -105,7 +102,6 @@ const Login = () => {
       </div>
       <div className="login-right">
         <div className="login-illustration">
-          {/* Insert the illustration as a background or use an <img> */}
         </div>
       </div>
     </div>

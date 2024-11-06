@@ -13,6 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 2 1;
   }
   
   .login-form-wrapper {
@@ -30,6 +31,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    flex: 2 1;
   }
   
   /* Typography and form styles */
@@ -104,4 +106,120 @@
     font-size: 0.9rem;
     margin-top: 10px;
   }
+  /* General container for both pages */
+.signup-container,
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+.signup-left,
+.login-left {
+    flex: 2 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.signup-right,
+.login-right {
+    flex: 2 1;
+  background: #f0f4f8; /* Light background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form-wrapper,
+.login-form-wrapper {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #777;
+  margin-bottom: 2rem;
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+
+.signup-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+/* Illustration Section */
+.signup-illustration,
+.login-illustration {
+  /* You can add a background image here or an illustration */
+  background: url('./login.png') no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+  @media (max-width: 768px) {
+    .signup-container, .login-container {
+      flex-direction: column;
+    }
+  
+    .signup-left, .login-left, .signup-right, .login-right {
+      flex: none;
+      width: 100%;
+    }
+  
+    .signup-form-wrapper, .login-form-wrapper {
+      max-width: 100%;
+      padding: 1rem;
+    }
+  }
+  
   
